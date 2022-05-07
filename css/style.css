@@ -37,10 +37,26 @@ h1 {
     justify-content: space-between;
 }
 
+
+
+
 header {
     background: #f8f8f8;
     padding: 2em 0;
 }
+
+@media (max-width: 675px) {
+    .nav_container {
+        flex-direction: column;
+    }
+
+    header {
+        text-align: center;
+
+    }
+}
+
+
 
 
 
@@ -81,4 +97,15 @@ nav a:focus {
 
 .active_page:hover {
     color: #808080;
+}
+
+
+@media (max-width: 675px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: .5em 0;
+    }
 }
