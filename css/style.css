@@ -7,6 +7,7 @@ body {
 img {
     max-width: 100%;
     display: block;
+    border-radius: 7px;
 }
 
 
@@ -75,6 +76,9 @@ a:hover {
 
 }
 
+.info_article {
+    margin: 2em 0;
+}
 
 
 
@@ -170,4 +174,39 @@ nav a:focus {
     nav li {
         margin: .5em 0;
     }
+}
+
+
+/* Articles */
+
+.featured_article {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Cards  */
+.card_content {
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
+    margin-bottom: 2rem;
 }
