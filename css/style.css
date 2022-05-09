@@ -1,10 +1,28 @@
 body {
     margin: 0;
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 
 /* Typography ================================================ */
+
+h1,
+h2,
+h3 {
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: darkblue;
+}
+
+
+
+
 
 h1 {
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
@@ -14,13 +32,54 @@ h1 {
     margin: 0;
 }
 
+a {
+    color: darkblue;
+}
 
+a:hover {
+    color: lightblue;
+
+}
+
+/* Logo Subtitle */
 .second_title {
     font-weight: bold;
     color: lightblue;
     font-size: .74rem;
     margin: 0;
 }
+
+.article_title {
+    font-size: 1.5rem;
+
+}
+
+.read_more_article,
+.info_article {
+    font-size: 0.875rem;
+
+}
+
+.read_more_article {
+    color: darkblue;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.read_more_article:hover,
+.read_more_article:focus {
+    color: lightblue;
+    text-decoration: underline;
+
+
+}
+
+
+
+
+
+
 
 /* Layout */
 
@@ -31,8 +90,9 @@ h1 {
 
 }
 
-.nav_container {
+.container_flex {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -42,18 +102,24 @@ h1 {
 header {
     background: #f8f8f8;
     padding: 2em 0;
+    text-align: center;
 }
 
-@media (max-width: 675px) {
-    .nav_container {
-        flex-direction: column;
+@media (min-width: 675px) {
+    .container_flex {
+        flex-direction: row;
     }
 
-    header {
-        text-align: center;
+    main {
+        width: 75%;
+    }
 
+    aside {
+        width: 20%;
     }
 }
+
+
 
 
 /* Navigation */
