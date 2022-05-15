@@ -5,10 +5,10 @@ body {
 }
 
 img {
-    max-width: 100%;
-    display: block;
-    border-radius: 7px;
+    display: inline-block;
+    width: 100%;
 }
+
 
 
 /* Typography ================================================ */
@@ -42,6 +42,8 @@ a:hover {
 
 }
 
+
+
 /* Logo Subtitle */
 .second_title {
     font-weight: bold;
@@ -49,37 +51,6 @@ a:hover {
     font-size: .74rem;
     margin: 0;
 }
-
-.article_title {
-    font-size: 1.5rem;
-
-}
-
-.read_more_article,
-.info_article {
-    font-size: 0.875rem;
-
-}
-
-.read_more_article {
-    color: darkblue;
-    text-decoration: none;
-    font-weight: 600;
-
-}
-
-.read_more_article:hover,
-.read_more_article:focus {
-    color: lightblue;
-    text-decoration: underline;
-
-
-}
-
-.info_article {
-    margin: 2em 0;
-}
-
 
 
 
@@ -100,6 +71,15 @@ a:hover {
     justify-content: space-between;
 }
 
+.container_grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 2fr);
+    gap: 3rem;
+}
+
+
 
 
 
@@ -109,104 +89,5 @@ header {
     text-align: center;
 }
 
-@media (min-width: 675px) {
-    .container_flex {
-        flex-direction: row;
-    }
-
-    main {
-        width: 75%;
-    }
-
-    aside {
-        width: 20%;
-    }
-}
 
 
-
-
-/* Navigation */
-
-nav ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    justify-content: center;
-
-}
-
-nav li {
-    margin-left: 2em;
-
-
-}
-
-nav a {
-    text-decoration: none;
-    color: #808080;
-    font-weight: 500;
-    padding: .25em 0;
-
-
-}
-
-
-nav a:hover,
-nav a:focus {
-    color: blue;
-}
-
-.active_page {
-    border-bottom: 1px solid #808080;
-}
-
-.active_page:hover {
-    color: #808080;
-}
-
-
-@media (max-width: 675px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav li {
-        margin: .5em 0;
-    }
-}
-
-
-/* Articles */
-
-.featured_article {
-    border-bottom: 1px solid black;
-    padding-bottom: 1em;
-    margin-bottom: 2em;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Cards  */
-.card_content {
-    padding: 1rem;
-    border-radius: 2rem;
-    box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
-    margin-bottom: 2rem;
-}

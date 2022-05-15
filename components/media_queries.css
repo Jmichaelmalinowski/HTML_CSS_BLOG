@@ -1,0 +1,15 @@
+@media (min-width: 675px) {
+    .container_flex {
+        flex-direction: row;
+    }
+
+}
+
+@media (max-width: 675px) {
+    .container_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    
+}
