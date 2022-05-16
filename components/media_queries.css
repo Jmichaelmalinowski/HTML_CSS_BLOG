@@ -1,11 +1,20 @@
-@media (min-width: 675px) {
+@media (min-width: 750px) {
     .container_flex {
         flex-direction: row;
     }
 
 }
 
-@media (max-width: 675px) {
+@media (max-width: 1007px) {
+    .container_grid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+    
+}
+
+@media (max-width: 700px) {
     .container_grid {
         display: grid;
         grid-template-columns: 1fr;
